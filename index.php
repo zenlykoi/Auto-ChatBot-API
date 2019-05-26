@@ -171,7 +171,7 @@
             <span class="glyphicon glyphicon-cog"></span>
             <span class="sr-only">Toggle Dropdown</span>
         </button>
-        <ul class="dropdown-menu" role="menu">
+        <ul class="dropdown-menu" role="menu" style="min-width:200px">
             <select class="form-control" id="option" onchange="changeOption()">
             	<option selected>không biết thì hỏi</option>       <!-- 0 -->
 			    <option>không biết trả lời bừa</option>   		   <!-- 1 -->
@@ -295,6 +295,8 @@
 			config.option = 1;
 		}else if(config.option == 1){
 			config.option = 0;
+			config.teaching = 0;
+		    config.teachQuestion = '';
 		}
 	}
     function main(){
